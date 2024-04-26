@@ -1,4 +1,4 @@
-function smallestMissingPositiveInteger(nums) {
+function smallestMissingPositiveInteger(A) {
 
 
     // Implement the function smallest_missing_positive_integer
