@@ -10,7 +10,6 @@ function smallestMissingPositiveInteger(A) {
         {
             present[i]=false;
         }
-        // Mark the occurrences
         for (let i = 0; i < n; i++)
         {
             // Only mark the required elements
