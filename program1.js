@@ -2,8 +2,6 @@ function smallestMissingPositiveInteger(A) {
 
 
     // Implement the function smallest_missing_positive_integer
-
-    //solution
     let n = A.length;
         let present = new Array(n+1);
         
