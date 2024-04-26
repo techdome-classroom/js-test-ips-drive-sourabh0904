@@ -24,8 +24,6 @@ function smallestMissingPositiveInteger(A) {
                 return i;
             }
         }
-        // If the original array was of the
-        // type {1, 2, 3} in its sorted form
         return n + 1;
   
   }
