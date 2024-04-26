@@ -1,5 +1,6 @@
 function longestSubstring(s) {
 //longestsubstring
+//some comment
 
     if (!s) return 0;
 
