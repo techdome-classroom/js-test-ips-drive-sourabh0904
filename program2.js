@@ -18,8 +18,6 @@ function longestSubstring(s) {
 
     // Implementation of longestSubstring function
     var n = str.length;
-    
-    // Result
     var res = 0; 
     
     for(var i = 0; i < n; i++)
