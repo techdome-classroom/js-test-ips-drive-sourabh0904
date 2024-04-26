@@ -1,16 +1,26 @@
 function longestSubstring(s) {
 
 
-    // Implementation of longestSubstring function
-    var n = str.length;
-    var res = 0; 
-    
-    for(var i = 0; i < n; i++)
-        for(var j = i; j < n; j++)
-            if (areDistinct(str, i, j))
-                res = Math.max(res, j - i + 1);
-                
-    return res;
+    if (!s) return 0;
+
+    let longest = 0;
+    let left = 0;
+    const charSet = new Set();
+
+    for (let right = 0; right < s.length; right++) {
+      const currentChar = s[right];
+  
+      while (charSet.has(currentChar)) {
+        charSet.delete(s[left]);
+        left++;
+      }
+  
+      charSet.add(currentChar);
+  
+      longest = Math.max(longest, right - left + 1);
+    }
+  
+    return longest;
 }
 
 module.exports = { longestSubstring };
