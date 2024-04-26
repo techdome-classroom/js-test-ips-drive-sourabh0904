@@ -3,7 +3,6 @@ function smallestMissingPositiveInteger(A) {
 
     // Implement the function smallest_missing_positive_integer
     let n = A.length;
-        // To mark the occurrence of elements
         let present = new Array(n+1);
         
         
