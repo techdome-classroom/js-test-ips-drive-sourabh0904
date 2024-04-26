@@ -1,8 +1,6 @@
 
 function areDistinct(str, i, j)
 {
-    
-    // Note : Default values in visited are false
     var visited = new Array(256);
 
     for(var k = i; k <= j; k++)
