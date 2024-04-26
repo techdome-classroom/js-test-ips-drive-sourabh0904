@@ -3,6 +3,7 @@ function longestSubstring(s) {
 
     if (!s) return 0;
 
+    
     let longest = 0;
     let left = 0;
     const charSet = new Set();
